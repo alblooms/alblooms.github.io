@@ -20,6 +20,11 @@
             'en': 'about.html',
             'fr': 'a-propos.html',
             'es': 'acerca-de.html'
+        },
+        'bye.html': {
+            'en': 'bye.html',
+            'fr': 'adieu.html',
+            'es': 'adios.html'
         }
     };
 
