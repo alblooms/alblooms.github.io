@@ -42,6 +42,9 @@
 	--color--page--background--alternative--download: var(--color--alblooms--negative);
 	--color--page--background--alternative--about: var(--color--alblooms--secondary);
 	--color--page--background--alternative--bye: var(--color--alblooms--accent);
+	--color--page--background--alternative--cookies: var(--color--alblooms--accent);
+	--color--page--background--alternative--terms: var(--color--alblooms--accent);
+	--color--page--background--alternative--privacy: var(--color--alblooms--accent);
 	--color--page--background--alternative--current: var(--color--alblooms--primary);
 
 	--color--text-whitish: var(--color--pure--gray--9490);
