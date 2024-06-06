@@ -50,3 +50,7 @@ footer nav {
 :where(footer nav a:hover) {
 	text-decoration: underline;
 }
+
+footer nav a.current {
+  text-shadow: 0 0 16px var(--color--text-blackish);
+}
