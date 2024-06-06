@@ -25,6 +25,21 @@
             'en': 'bye.html',
             'fr': 'adieu.html',
             'es': 'adios.html'
+        },
+        'privacy.html': {
+            'en': 'privacy.html',
+            'fr': 'confidentialite.html',
+            'es': 'privacidad.html'
+        },
+        'terms.html': {
+            'en': 'terms.html',
+            'fr': 'termes-conditions.html',
+            'es': 'terminos-condiciones.html'
+        },
+        'cookies.html': {
+            'en': 'cookies.html',
+            'fr': 'cookies.html',
+            'es': 'cookies.html'
         }
     };
 
