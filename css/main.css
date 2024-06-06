@@ -1,0 +1,237 @@
+main > article > div {
+  /* padding: clamp(10px, 1vw * 6, 60px); */
+  padding: 15px;
+  gap: 45px;
+  /* max-width: calc(var(--my--style--global--wide-size) - 2 * clamp(10px, 1vw * 6, 60px)) !important; */
+  max-width: var(--my--style--global--wide-size) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+main > article h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+main > article section {
+  align-self: center;
+  width: 100%;
+}
+main > article section {
+  align-self: center;
+  width: 100%;
+}
+
+main > article aside {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+main > article aside > figure {
+  margin: 0;
+  padding: 0;
+}
+
+main > article aside > figure > img,
+html main img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+main > article:nth-child(odd) {
+  background-color: var(--color--page--background--alternative--current);
+  color: var(--color--text-whitish);
+}
+
+main > article:nth-child(even) {
+  background-color: var(--color--page--background);
+  color: var(--color--text-blackish);
+}
+
+main > article:nth-child(odd) h2 {
+  color: var(--color--text-whitish);
+}
+
+main > article:nth-child(even) h2 {
+  color: var(--color--text-blackish);
+}
+
+main > article aside > figure > figcaption {
+  display: none;
+}
+
+p + h2 {
+  margin-top: 128px;
+}
+aside + section > h2 {
+  margin-top: 12pt;
+}
+
+
+.my-block-buttons {
+  margin-top: calc( var(--my--style--block-gap) * 1.5);
+  gap: 8px;
+}
+
+noscript ul li a {
+  background-color: var(--color--button--background-default) !important;
+  color: var(--color--text-whitish);
+}
+main article:nth-of-type(even) section a.button {
+  background-color: var(--color--pure--gray--2000);
+  color: var(--color--text-whitish);
+}
+main article:nth-of-type(odd) section a.button {
+  background-color: var(--color--text-whitish);
+  color: var(--color--page--background--alternative--current);
+}
+
+noscript ul li a:hover {
+  background-color: var(--color--button--background-hover) !important;
+}
+main article:nth-of-type(even) section a.button:hover {
+  background-color: var(--color--pure--gray--3333);
+}
+main article:nth-of-type(odd) section a.button:hover {
+  background-color: var(--color--pure--gray--8784);
+}
+
+noscript ul li a,
+main article section p a.button {
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  /* background-color: var(--color--pure--gray--1176); */
+  border-width: 0;
+  /* color: var(--color--pure--white); */
+  font-size: var(--my--preset--font-size--small);
+  font-weight: 450;
+  line-height: inherit;
+  text-decoration: none;
+  word-break: break-word;
+  display: inline-block;
+}
+main article:nth-of-type(odd) section p:has(> a.button) {
+  text-align: end;
+}
+main article:nth-of-type(even) section p:has(> a.button) {
+  text-align: start;
+}
+@media (max-width: 789px) {
+  main article section p:has(> a.button) {
+    text-align: center !important;
+  }
+}
+
+.grayed-out {
+  opacity: 0.5;
+}
+
+noscript ul {
+  list-style-type: none;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  width: fit-content;
+}
+
+noscript ul li {
+  display: inline;
+}
+
+/*noscript {
+  display: block;
+  width: 300px;
+}*/
+noscript * {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+@media (max-width: 789px) {
+  main > article {
+    display: block;
+  }
+
+  main > article section, main > article aside {
+    width: 100%;
+    margin: 0;
+  }
+
+  main > article aside {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  :where(main article aside figure img) {
+    object-fit: cover !important;
+    width: 100% !important;
+    aspect-ratio: 4/3 !important;
+  }
+}
+
+@media (min-width: 790px) and (max-width: 1440px) {
+  main > article > div {
+    padding: clamp(16px, 1vw * 4, 60px);
+  }
+}
+
+@media (min-width: 790px) {
+  main > article > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: cyan; */
+    padding: 45px 60px;
+  }
+
+  main > article > div:has(> section:first-child:nth-last-child(2)) {
+    /* background-color: red; */
+    grid-template-rows: auto auto auto;
+  }
+  main > article > div:has(> section:first-child:nth-last-child(3)) {
+    /* background-color: blue; */
+    grid-template-rows: auto auto auto auto;
+  }
+  main > article aside {
+    vertical-align: center;
+  }
+  main > article > div:has(> section:first-child:nth-last-child(2)) aside {
+    grid-row: 1 / span 3;
+  }
+  main > article > div:has(> section:first-child:nth-last-child(3)) aside {
+    grid-row: 1 / span 4;
+  }
+
+  main > article:nth-of-type(odd) section {
+    grid-column: 1 / span 1;
+  }
+  main > article:nth-of-type(odd) aside {
+    grid-column: 2 / span 1;
+  }
+  main > article:nth-of-type(even) {
+    grid-column: 2 / span 1;
+  }
+  main > article:nth-of-type(even) aside {
+    grid-column: 1 / span 1;
+  }
+
+  main > article section:nth-of-type(1) {
+    grid-row: 2 / span 1;
+  }
+  main > article section:nth-of-type(2) {
+    grid-row: 3 / span 1;
+  }
+
+  :where(main article aside figure img) {
+    object-fit: cover !important;
+    width: 100% !important;
+    aspect-ratio: 3/4 !important;
+  }
+}
