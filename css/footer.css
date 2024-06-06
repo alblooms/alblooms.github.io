@@ -35,7 +35,7 @@ footer nav ul li {
 }
 
 footer .copyright {
-  font-size: var(--font-size--normal);
+  font-size: var(--font-size--small);
   color: var(--color--pure--gray--3000);
 }
 footer nav {

@@ -54,7 +54,7 @@
 	--font-size--xx-small: clamp(6pt, 0.675rem + ((1vw - 3.2px) * 0.079), 8pt);
 	--font-size--x-small: clamp(8pt, 0.725rem + ((1vw - 3.2px) * 0.104), 10pt);
 	--font-size--small: clamp(9pt, 0.775rem + ((1vw - 3.2px) * 0.129), 12pt);
-	--font-size--normal: clamp(10pt, 0.875rem + ((1vw - 3.2px) * 0.179), 14pt);
+	--font-size--normal: clamp(10pt, 0.875rem + ((1vw - 3.2px) * 0.179), 14pt); /* fixme: goes from small-ish to medium-ish*/
 	--font-size--medium: clamp(12pt, 0.984rem + ((1vw - 3.2px) * 0.737), 20pt);
 	--font-size--large: clamp(16pt, 1.502rem + ((1vw - 3.2px) * 1.426), 32pt);
 	--font-size--x-large: clamp(24pt, 2.089rem + ((1vw - 3.2px) * 2.373), 40pt);
