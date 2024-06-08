@@ -41,6 +41,7 @@ footer .copyright {
 footer nav {
   font-size: var(--font-size--x-small);
   color: var(--color--pure--gray--3000);
+  text-align: center;
 }
 
 :where(footer nav a) {
