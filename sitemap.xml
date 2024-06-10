@@ -24,6 +24,13 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/acerca-de.html"/>
   </url>
   <url>
+    <loc>https://www.alblooms.app/en/contact.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/contacto.html"/>
+  </url>
+  <url>
     <loc>https://www.alblooms.app/en/bye.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -82,6 +89,13 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/acerca-de.html"/>
   </url>
   <url>
+    <loc>https://www.alblooms.app/fr/contact.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/contacto.html"/>
+  </url>
+  <url>
     <loc>https://www.alblooms.app/fr/adieu.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -138,6 +152,13 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/about.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/a-propos.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/es/contacto.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/contact.html"/>
   </url>
   <url>
     <loc>https://www.alblooms.app/es/adios.html</loc>
