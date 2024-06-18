@@ -1,3 +1,4 @@
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^alblooms.ch(.*)$ [NC]
+RewriteCond %{HTTP_HOST} ^www.alblooms.ch(.*)$ [NC]
 RewriteRule ^(.*)$ https://www.alblooms.app/$1 [R=301,L]
