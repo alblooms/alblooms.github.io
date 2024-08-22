@@ -132,6 +132,7 @@ main article section ul li {
 main article:nth-of-type(odd) section p:has(> a.button),
 main article:nth-of-type(odd) section ul:has(> li > a.button) {
   text-align: end;
+  justify-content:flex-end;
 }
 main article:nth-of-type(even) section p:has(> a.button),
 main article:nth-of-type(even) section ul:has(> li > a.button) {
