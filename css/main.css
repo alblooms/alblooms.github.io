@@ -107,8 +107,8 @@ main article section p a.button {
   /* background-color: var(--color--pure--gray--1176); */
   border-width: 0;
   /* color: var(--color--pure--white); */
-  font-size: var(--my--preset--font-size--small);
-  font-weight: 450;
+  font-size: var(--font-size--semi-medium);
+  font-weight: 450; /*ex-450, Vivaldi threshold at 550 */
   line-height: inherit;
   text-decoration: none;
   word-break: break-word;
