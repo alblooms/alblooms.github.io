@@ -16,13 +16,41 @@ header > div.container {
   justify-content: start;
   align-items: center;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-header > div.container > div.title {
+header > div.container > div#branding {
+  display: flex;
+  line-height: normal;
+}
+header > div.container > div#branding > a {
+  height: 64px;
+}
+header > div.container > div#branding > div#texts {
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+  flex-grow: 2;
+  margin-top: auto;
+  margin-bottom: auto;
+  /* background:pink; */
+  align-self: bottom;
+}
+
+header > div.container > div#branding div.title {
   font-size: var(--font-size--large);
   font-weight: 500;
   margin: 0;
   align-self: left;
+  line-height: 1;
+  color: var(--color--pure--gray--3333);
+}
+
+header > div.container > div#branding div#slogan {
+  font-size: var(--font-size--default);
+  font-style: oblique;
+  color: var(--color--pure--gray--4000);
 }
 
 .menu {
@@ -34,6 +62,7 @@ header > div.container > div.title {
   gap: 8px;
   padding: 0;
   margin: 0;
+  text-align: end;
 }
 
 .menu li {
@@ -41,7 +70,7 @@ header > div.container > div.title {
   line-height: 1.5;
   font-size: var(--font-size--normal); /* font-size: 18px; */
   padding: 0;
-  margin: 0 16px;
+  margin: 0 12px;
 }
 
 .menu li a {
@@ -60,7 +89,13 @@ header > div.container > div.title {
   height: 64px;
   margin-left: 8px;
   margin-right: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
+/* div#branding a:has(> img.logo) {
+  display: block;
+} */
 
 
 @media (min-width: 480px) {
@@ -69,6 +104,7 @@ header > div.container > div.title {
     align-items: flex-end;
     top: 0;
   }
+
 }
 
 @media (max-width: 479px) {
@@ -76,8 +112,33 @@ header > div.container > div.title {
     flex-direction: column;
     align-items: flex-end;
     gap: 0;
+    position: initial;
+    bottom: initial;
+    right: initial;
   }
   .menu li {
     margin: 0 8px;
+  }
+}
+
+@media (max-width: 789px) {
+  header > div.container > div#branding > div#texts {
+    /* flex-flow: row;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: var(--sixteen-pixels);
+     */
+    margin-top: 0;
+  }
+  .logo {
+    margin-right: 8px;
+  }
+    /* header > div.container > div#branding div.title::after {
+      content: " :";
+    } */
+}
+@media (max-width: 479px) {
+  header > div.container > div#branding > div#texts {
+    margin-top: auto;
   }
 }
