@@ -1,5 +1,6 @@
 footer {
   padding: 20px 10px 0 10px;
+  line-height: 1.33;
 }
 
 footer .container {
@@ -7,6 +8,7 @@ footer .container {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  column-gap: 48px;
   align-items: center;
   border-top: 1px solid var(--color--pure--gray--7333);
   padding: 8px;
@@ -31,12 +33,16 @@ footer nav ul li {
   }
   footer nav ul {
     justify-content: center;
+    border-top: 1px solid var(--color--pure--gray--7333);
+    padding-top: 8px;
+    padding-bottom: 4px;
   }
 }
 
 footer .copyright {
   font-size: var(--font-size--small);
   color: var(--color--pure--gray--3000);
+  margin-bottom: 4px;
 }
 footer nav {
   font-size: var(--font-size--x-small);
