@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- English Pages -->
+  <url>
+    <loc>https://www.alblooms.app/en/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/index.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/en/download.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/telecharger.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/descargar.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/en/about.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/acerca-de.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/en/contact.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/contacto.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/en/bye.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/adieu.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/adios.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/en/privacy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/privacidad.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/en/terms.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/termes-conditions.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/terminos-condiciones.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/en/cookies.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/cookies.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/en/language.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/langue.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/idioma.html"/>
+  </url>
+  
+  <!-- French Pages -->
+  <url>
+    <loc>https://www.alblooms.app/fr/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/index.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/fr/telecharger.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/download.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/descargar.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/fr/a-propos.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/acerca-de.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/fr/contact.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/contacto.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/fr/adieu.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/bye.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/adios.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/fr/confidentialite.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/privacidad.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/fr/termes-conditions.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/terminos-condiciones.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/fr/cookies.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/cookies.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/fr/langue.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/language.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alblooms.app/es/idioma.html"/>
+  </url>
+
+  <!-- Spanish Pages -->
+  <url>
+    <loc>https://www.alblooms.app/es/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/index.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/es/descargar.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/download.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/telecharger.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/es/acerca-de.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/a-propos.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/es/contacto.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/contact.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/es/adios.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/bye.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/adieu.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/es/privacidad.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/confidentialite.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/es/terminos-condiciones.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/termes-conditions.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/es/cookies.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/cookies.html"/>
+  </url>
+  <url>
+    <loc>https://www.alblooms.app/es/idioma.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alblooms.app/en/language.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.alblooms.app/fr/langue.html"/>
+  </url>
+</urlset>

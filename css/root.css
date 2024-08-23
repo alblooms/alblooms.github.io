@@ -45,42 +45,45 @@
 	--color--page--background--alternative--cookies: var(--color--alblooms--accent);
 	--color--page--background--alternative--terms: var(--color--alblooms--accent);
 	--color--page--background--alternative--privacy: var(--color--alblooms--accent);
+	--color--page--background--alternative--contact: var(--color--alblooms--accent);
 	--color--page--background--alternative--current: var(--color--alblooms--primary);
 
 	--color--text-whitish: var(--color--pure--gray--9490);
 	--color--text-blackish: var(--color--pure--gray--2667);
 
 
-	--font-size--xx-small: clamp(6pt, 0.675rem + ((1vw - 3.2px) * 0.079), 8pt);
-	--font-size--x-small: clamp(8pt, 0.725rem + ((1vw - 3.2px) * 0.104), 10pt);
-	--font-size--small: clamp(9pt, 0.775rem + ((1vw - 3.2px) * 0.129), 12pt);
-	--font-size--normal: clamp(10pt, 0.875rem + ((1vw - 3.2px) * 0.179), 14pt); /* fixme: goes from small-ish to medium-ish*/
-	--font-size--medium: clamp(12pt, 0.984rem + ((1vw - 3.2px) * 0.737), 20pt);
-	--font-size--large: clamp(16pt, 1.502rem + ((1vw - 3.2px) * 1.426), 32pt);
-	--font-size--x-large: clamp(24pt, 2.089rem + ((1vw - 3.2px) * 2.373), 40pt);
-	--font-size--xx-large: clamp(32pt, 2.5rem + ((1vw - 3.2px) * 5), 60pt);
+	--my--style--global--content-size: 620px;
+	--my--style--global--wide-size: 1440px;
+	--my--style--global--narrow-size: 320px;
 
-	/* --font-size--xx-small: clamp(6pt, 0.675rem + ((1vw - 3.2px) * 0.079), 8pt);
-	--font-size--x-small: clamp(8pt, 0.775rem + ((1vw - 3.2px) * 0.129), 10pt);
-	--font-size--small: clamp(9pt, 0.625rem + ((1vw - 3.2px) * 0.079), 12pt);
-	--font-size--normal: clamp(10pt, 0.875rem + ((1vw - 3.2px) * 0.179), 14pt);
-	--font-size--medium: clamp(12pt, 0.984rem + ((1vw - 3.2px) * 0.737), 20pt);
-	--font-size--large: clamp(16pt, 1.502rem + ((1vw - 3.2px) * 1.426), 32pt);
-	--font-size--x-large: clamp(24pt, 2.089rem + ((1vw - 3.2px) * 2.373), 40pt);
-	--font-size--xx-large: clamp(32pt, 2.5rem + ((1vw - 3.2px) * 5), 60pt); */
+	/*
+	Note to future self: DO NOT TRY TO OPTIMIZE (until 2025 the soonest). SMART IMPLEMENTATIONS DO NOT WORK.
+
+	clamp(
+		min_value,
+		calc(
+			min_value + (max_value-min_value) * ((viewport_current_width-viewport_narrow_width)/(viewport_wide_width-viewport_narrow_width))
+		)
+		max_value
+	);
+
+	937 found empirically for growth to stop at 1570px viewport (where the central content stops to grow).
+
+	TODO: shift names from semi-medium ==> medium to xx-large ==> xxx-large
+	*/
+
+	--font-size--x-small:     clamp(8pt,    calc(8pt    + 3   * ((100vw - 320px) / 937)), 11pt);
+	--font-size--small:       clamp(9.5pt,  calc(9.5pt  + 2.5 * ((100vw - 320px) / 937)), 12pt);
+	--font-size--normal:      clamp(11.5pt, calc(11.5pt + 3.5 * ((100vw - 320px) / 937)), 15pt);
+	--font-size--semi-medium: clamp(12pt,   calc(12pt   + 3.5 * ((100vw - 320px) / 937)), 15.5pt);
+	--font-size--medium:      clamp(13pt,   calc(13pt   + 5   * ((100vw - 320px) / 937)), 18pt);
+	--font-size--large:       clamp(16pt,   calc(16pt   + 8   * ((100vw - 320px) / 937)), 24pt);
+	--font-size--x-large:     clamp(24pt,   calc(24pt   + 16  * ((100vw - 320px) / 937)), 40pt);
+	--font-size--xx-large:    clamp(32pt,   calc(32pt   + 24  * ((100vw - 320px) / 937)), 56pt);
 
 	/* 10 12 16 24 32 */
 	/* 12 16 24 32 48 */
 	/* 14 20 32 40 60  */
-
-
-/*
-	--font-size--small: clamp(10pt, 0.875rem + ((1vw - 3.2px) * 0.179), 12pt); /* 16px=12pt *
-	--font-size--medium: clamp(12pt, 0.984rem + ((1vw - 3.2px) * 0.737), 16pt); /* 24px=18pt *
-	--font-size--large: clamp(16pt, 1.502rem + ((1vw - 3.2px) * 1.426), 24pt); /* 42.6px=32pt *
-	--font-size--x-large: clamp(24pt, 2.089rem + ((1vw - 3.2px) * 2.373), 32pt); /* 64px=48pt *
-	--font-size--xx-large: clamp(32pt, 2.5rem + ((1vw - 3.2px) * 5), 48pt); /* 80px=60pt *
-	*/
 
 	--font-family--inter: "Inter", sans-serif;
 
@@ -108,16 +111,13 @@
 	--my--custom--input--color--background: var(--color--pure--white);
 	--my--custom--spacing-increment: 2;
 	--my--custom--spacing-unit: 10;
-
-  --my--style--global--content-size: 620px;
-	--my--style--global--wide-size: 1440px;
 }
 
 :where(body) {
 	background-color: var(--color--pure--white);
 	color: var(--color--pure--gray--1176);
 	font-family: var(--my--preset--font-family--inter);
-	font-size: clamp(12pt, 0.875rem + ((1vw - 3.2px) * 0.179), 13pt); /* clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.179), 16px); */ /* todo from 12pt to 13pt*/
+	font-size: var(--font-size--normal); /* clamp(12pt, 0.875rem + ((1vw - 3.2px) * 0.179), 13pt);*/ /* clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.179), 16px); */ /* todo from 12pt to 13pt*/
 	font-weight: 400;
 	line-height: 1.65;
 	--my--style--root--padding-top: 0px;
@@ -147,7 +147,7 @@
 	line-height: 1.3;
 }
 :where(h5) {
-	font-size: var(--font-size--normal) !important;
+	font-size: var(--font-size--semi-medium) !important;
 	line-height: 1.4;
 }
 :where(h6) {

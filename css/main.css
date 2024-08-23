@@ -100,29 +100,49 @@ main article:nth-of-type(odd) section a.button:hover {
 }
 
 noscript ul li a,
-main article section p a.button {
+main article section p a.button,
+main article section ul a.button {
   border-radius: 5px;
   padding: 10px 20px;
   text-decoration: none;
   /* background-color: var(--color--pure--gray--1176); */
   border-width: 0;
   /* color: var(--color--pure--white); */
-  font-size: var(--my--preset--font-size--small);
-  font-weight: 450;
+  font-size: var(--font-size--semi-medium);
+  font-weight: 450; /*ex-450, Vivaldi threshold at 550 */
   line-height: inherit;
   text-decoration: none;
   word-break: break-word;
   display: inline-block;
 }
-main article:nth-of-type(odd) section p:has(> a.button) {
-  text-align: end;
+
+main article section ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1em;
+  padding: 0;
+  margin: 0;
 }
-main article:nth-of-type(even) section p:has(> a.button) {
+main article section ul li {
+  display: block;
+  list-style-type: none;
+  line-height: 1.5;
+}
+main article:nth-of-type(odd) section p:has(> a.button),
+main article:nth-of-type(odd) section ul:has(> li > a.button) {
+  text-align: end;
+  justify-content:flex-end;
+}
+main article:nth-of-type(even) section p:has(> a.button),
+main article:nth-of-type(even) section ul:has(> li > a.button) {
   text-align: start;
 }
 @media (max-width: 789px) {
-  main article section p:has(> a.button) {
+  main article section p:has(> a.button),
+  main article section ul:has(> li > a.button) {
     text-align: center !important;
+    flex-direction: column;
   }
 }
 

@@ -26,6 +26,16 @@
             'fr': 'adieu.html',
             'es': 'adios.html'
         },
+        'language.html': {
+            'en': 'language.html',
+            'fr': 'langue.html',
+            'es': 'idioma.html'
+        },
+        'contact.html': {
+            'en': 'contact.html',
+            'fr': 'contact.html',
+            'es': 'contacto.html'
+        },
         'privacy.html': {
             'en': 'privacy.html',
             'fr': 'confidentialite.html',
