@@ -23,6 +23,7 @@ header > div.container {
 header > div.container > div#branding {
   display: flex;
   line-height: normal;
+  cursor: default;
 }
 header > div.container > div#branding > a {
   height: 64px;
