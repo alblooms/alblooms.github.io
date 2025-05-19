@@ -256,3 +256,35 @@ noscript * {
     aspect-ratio: 3/4 !important;
   }
 }
+
+/* ==========================================================================
+   LEGAL PAGES (ToS & Privacy) – span only sections 1 & 4 full-width + bullets
+   ========================================================================== */
+@supports selector(body:has(footer nav:first-of-type ul li:nth-child(-n+2) a.current)) {
+  /* Hook: any page where the “current” link lives in the FIRST footer <nav>
+     and is one of its first two items (Privacy or Terms) */
+  body:has(footer nav:first-of-type ul li:nth-child(-n+2) a.current)
+    main > article > div section:nth-of-type(1),
+  body:has(footer nav:first-of-type ul li:nth-child(-n+2) a.current)
+    main > article > div section:nth-of-type(4)
+  {
+    /* Span both columns, leave everything else (grid, aside, sections 2&3) untouched */
+    grid-column: 1 / -1 !important;
+  }
+
+  /* Restore native bullets on any UL in these pages */
+  body:has(footer nav:first-of-type ul li:nth-child(-n+2) a.current)
+    main > article section ul
+  {
+    display: block !important;
+    list-style-type: disc !important;
+    margin: 1em 0 !important;
+    padding-inline-start: 1.5em !important;
+  }
+  body:has(footer nav:first-of-type ul li:nth-child(-n+2) a.current)
+    main > article section ul li
+  {
+    display: list-item !important;
+    margin-left: 0.5em !important;
+  }
+}
