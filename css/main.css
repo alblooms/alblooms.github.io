@@ -117,6 +117,7 @@ main article section ul a.button {
 }
 
 main article section ul {
+  list-style-type: disc !important;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
