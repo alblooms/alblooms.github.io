@@ -13,6 +13,11 @@ main > article h2 {
   margin-block-end: 0;
 }
 
+main > article h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 main > article section {
   align-self: center;
   width: 100%;
@@ -117,6 +122,7 @@ main article section ul a.button {
 }
 
 main article section ul {
+  list-style-type: disc !important;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -254,4 +260,58 @@ noscript * {
     width: 100% !important;
     aspect-ratio: 3/4 !important;
   }
+}
+
+/* ==========================================================================
+   LEGAL PAGES (ToS & Privacy) – span only sections 1 & 4 full-width + bullets
+   ========================================================================== */
+@supports selector(body:has(footer nav:first-of-type ul li a.current)) {
+  /* Hook: any page where the “current” link lives in the FIRST footer <nav>
+     and is one of its first two items (Privacy or Terms) */
+  body:has(footer nav:first-of-type ul li a.current)
+    main > article:nth-of-type(1) > div section,
+  body:has(footer nav:first-of-type ul li a.current)
+    main > article:nth-of-type(4) > div section
+  {
+    grid-column: 1 / span 2 !important;
+  }
+
+    .last-modified {
+      display: block;
+      float: right;
+      text-align: right;
+    }
+
+    body:has(footer nav:first-of-type ul li a.current)
+      main > article section ul
+    {
+      display: block !important;
+      list-style-type: disc !important;
+      margin: 1em 0 !important;
+      padding-inline-start: 1.0em !important;
+    }
+    body:has(footer nav:first-of-type ul li a.current)
+      main > article section ul li
+    {
+      display: list-item !important;
+      list-style-type: disc !important;
+      margin-left: 0.5em !important;
+    }
+
+    main > article section p, main > article section ul {
+      margin-block-start: 0.5em;
+      margin-block-end: 1.5em;
+    }
+
+    main > article section p, main > article section ul li {
+      margin-block-start: 0.5em;
+      margin-block-end: 0.5em;
+    }
+
+    main > article section p ~ h3, main > article section ul ~ h3 {
+      margin-block-start: 1em;
+    }
+
+
+
 }
