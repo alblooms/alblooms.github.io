@@ -45,13 +45,13 @@ header > div.container > div#branding div.title {
   margin: 0;
   align-self: left;
   line-height: 1;
-  color: var(--color--pure--gray--3333);
+  color: var(--color--header--text--title);
 }
 
 header > div.container > div#branding div#slogan {
   font-size: var(--font-size--default);
   font-style: oblique;
-  color: var(--color--pure--gray--4000);
+  color: var(--color--header--text--slogan);
 }
 
 .menu {

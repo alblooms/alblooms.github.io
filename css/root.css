@@ -5,7 +5,7 @@
 	--sixteen-pixels: 16px;
 	--four-pixels: 4px;
 	--twentyfour-points: 24pt;
-  	--color--alblooms--primary : #5ba574;
+  --color--alblooms--primary : #5ba574;
 	--color--alblooms--secondary: #5b8ca5;
 	--color--alblooms--accent: #a55b8c;
 	--color--alblooms--negative: #a5745b;
@@ -50,6 +50,9 @@
 
 	--color--text-whitish: var(--color--pure--gray--9490);
 	--color--text-blackish: var(--color--pure--gray--2667);
+
+	--color--header--text--title: var(--color--pure--gray--3333);
+	--color--header--text--slogan: var(--color--pure--gray--4000);
 
 
 	--my--style--global--content-size: 620px;
@@ -111,10 +114,62 @@
 	--my--custom--input--color--background: var(--color--pure--white);
 	--my--custom--spacing-increment: 2;
 	--my--custom--spacing-unit: 10;
+
+	--color--button--text--even: var(--color--text-whitish);
+	--color--button--background--even: var(--color--pure--gray--2000);
+	--color--button--background--even--hover: var(--color--header--text--title);  /* not semantically meaningful, just happens to match --color--header--text--title */
+
+	--color--button--text--odd: var(--color--page--background--alternative--current);
+	--color--button--background--odd: var(--color--text-whitish);
+	--color--button--background--odd--hover: var(--color--pure--gray--8784); /* not semantically meaningful, just happens to match --color--header--text--slogan */
+
+	--color--footer--nav--text: var(--color--pure--gray--3000);
+
+	--color--href: #5b8ca5; /* var(--color--custom--blue-3510); */
+	--color--href--hover: #397aa5; /* var(--color--custom--blue-3510); */
+	--color--href--active: #26597a; /* var(--color--custom--blue-3510); */
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+   color-scheme: dark; /* Hint for the browser */
+ 	}
+  :root {
+		--color--alblooms--primary:   #39784f; /* deeper green */
+    --color--alblooms--secondary: #3a6780; /* slate blue */
+    --color--alblooms--accent:    #85396e; /* darker magenta */
+    --color--alblooms--negative:  #865643; /* rich brown */
+
+		--color--page--background: var(--color--pure--gray--2000);
+
+		--color--text-whitish: var(--color--pure--gray--1176);
+		--color--text-blackish: var(--color--pure--gray--8784);
+
+		--color--header--text--title: var(--color--pure--gray--9020);
+		--color--header--text--slogan: var(--color--pure--gray--8784);
+
+		/* not overriden */
+		/* --color--button--background-default: var(--color--alblooms--primary);
+		--color--button--background-hover: var(--color--alblooms--primary--bright); */
+
+		--color--button--text--even: var(--color--pure--gray--2000);
+		--color--button--background--even: var(--color--pure--gray--7333);
+		--color--button--background--even--hover: var(--color--pure--gray--8784);  /* not semantically meaningful, just happens to match */
+
+		--color--button--text--odd: var(--color--page--background--alternative--current);
+		--color--button--background--odd: var(--color--pure--gray--2000);
+		--color--button--background--odd--hover: var(--color--pure--gray--1176); /* not semantically meaningful, just happens to match */
+
+		--color--footer--nav--text: var(--color--pure--gray--7333);
+
+		--color--href: #79adc9; /* var(--color--custom--blue-3510); */
+		--color--href--hover: #94c0d8; /* var(--color--custom--blue-3510); */
+		--color--href--active: #62a1be; /* var(--color--custom--blue-3510); */
+	}
 }
 
 :where(body) {
-	background-color: var(--color--pure--white);
+	background-color: var(--color--page--background);
 	color: var(--color--pure--gray--1176);
 	font-family: var(--my--preset--font-family--inter);
 	font-size: var(--font-size--normal); /* clamp(12pt, 0.875rem + ((1vw - 3.2px) * 0.179), 13pt);*/ /* clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.179), 16px); */ /* todo from 12pt to 13pt*/
