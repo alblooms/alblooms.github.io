@@ -81,27 +81,37 @@ aside + section > h2 {
   gap: 8px;
 }
 
+main a {
+  color: var(--color--href);
+  text-decoration: none;
+}
+main a:active {
+  color: var(--color--href--active);
+}
+main a:hover {
+  color: var(--color--href--hover);
+}
 noscript ul li a {
   background-color: var(--color--button--background-default) !important;
   color: var(--color--text-whitish);
 }
 main article:nth-of-type(even) section a.button {
-  background-color: var(--color--pure--gray--2000);
-  color: var(--color--text-whitish);
+  background-color: var(--color--button--background--even);
+  color: var(--color--button--text--even);
 }
 main article:nth-of-type(odd) section a.button {
-  background-color: var(--color--text-whitish);
-  color: var(--color--page--background--alternative--current);
+  background-color: var(--color--button--background--odd);
+  color: var(--color--button--text--odd);
 }
 
 noscript ul li a:hover {
   background-color: var(--color--button--background-hover) !important;
 }
 main article:nth-of-type(even) section a.button:hover {
-  background-color: var(--color--pure--gray--3333);
+  background-color: var(--color--button--background--even--hover);
 }
 main article:nth-of-type(odd) section a.button:hover {
-  background-color: var(--color--pure--gray--8784);
+  background-color: var(--color--button--background--odd--hover);
 }
 
 noscript ul li a,

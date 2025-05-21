@@ -42,20 +42,20 @@ footer nav ul li {
 
 footer .copyright {
   font-size: var(--font-size--small);
-  color: var(--color--pure--gray--3000);
+  color: var(--color--footer--nav--text);
   margin-bottom: 4px;
   cursor: default;
 }
 footer nav {
   font-size: var(--font-size--x-small);
-  color: var(--color--pure--gray--3000);
+  color: var(--color--footer--nav--text);
   text-align: center;
   margin-block-start: 2px;
   margin-block-end: 2px;
 }
 
 :where(footer nav a) {
-	color: var(--color--pure--gray--3000);
+	color: var(--color--footer--nav--text);
 	text-decoration: none;
 }
 :where(footer nav a:hover) {
