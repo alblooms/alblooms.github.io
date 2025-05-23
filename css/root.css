@@ -135,10 +135,12 @@
    color-scheme: dark; /* Hint for the browser */
  	}
   :root {
-		--color--alblooms--primary:   #39784f; /* deeper green */
-    --color--alblooms--secondary: #3a6780; /* slate blue */
-    --color--alblooms--accent:    #85396e; /* darker magenta */
-    --color--alblooms--negative:  #865643; /* rich brown */
+		/* TODO: @media (color-gamut: srbg) { l=33 */
+		--color--alblooms--primary:   #3B6C47;
+    --color--alblooms--secondary: #3B606C;
+    --color--alblooms--accent:    #6C3B60;
+    --color--alblooms--negative:  #6C473B;
+		/* TODO: @media (color-gamut: p3) { fine-tune colors */
 
 		--color--page--background: var(--color--pure--gray--2000);
 
